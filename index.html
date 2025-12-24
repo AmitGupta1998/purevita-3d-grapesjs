@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PureVita – 3D Bottle</title>
+
+  <!-- GrapesJS -->
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css"/>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Three.js -->
+  <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #021b2d;
+      font-family: Poppins, sans-serif;
+      overflow-x: hidden;
+    }
+
+    #gjs { height: 100%; }
+
+    .hero {
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #2BC7F4, #021b2d);
+    }
+
+    .hero-text {
+      position: absolute;
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 5rem;
+      margin: 0;
+      letter-spacing: 3px;
+    }
+
+    .hero-text p {
+      opacity: 0.85;
+      font-size: 1.4rem;
+    }
+
+    canvas {
+      position: absolute;
+      inset: 0;
+    }
+
+    section {
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      background: #021b2d;
+    }
+  </style>
+</head>
+<body>
+
+<div id="gjs">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>PUREVITA</h1>
+      <p>Pure Energy. Pure Hydration.</p>
+    </div>
+    <canvas id="bottle-canvas"></canvas>
+  </section>
+
+  <section class="benefits">Electrolyte Boost</section>
+  <section class="energy">Instant Hydration</section>
+</div>
+
+<script src="editor.js"></script>
+<script src="three-scene.js"></script>
+<script src="animations.js"></script>
+
+</body>
+</html>
