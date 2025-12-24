@@ -28,7 +28,7 @@ npm start
 ## Demo Screenshots
 
 ### Screenshot 1
-![Demo Screenshot 1](./demo/screenshot1.png)
+![Demo Screenshot 1](./demo/Screenshot1.png)
 
 ### Screenshot 2
 ![Demo Screenshot 2](./demo/screenshot2.png)
